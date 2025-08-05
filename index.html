@@ -4,90 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ministerio de Louvor Valentes de Davi</title>
+  <!-- Tipografia Moderna -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <!-- Ícones FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      background: #f7f7fa;
-      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f0ff 0%, #faf3e3 100%);
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
       color: #222;
+      min-height: 100vh;
     }
     .container {
       max-width: 700px;
       margin: 40px auto;
       background: #fff;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      border-radius: 12px;
-      padding: 32px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      border-radius: 16px;
+      padding: 32px 16px;
+      animation: fadeIn 1.2s;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 18px auto;
+      max-width: 120px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(63,81,181,0.17);
+      background: #fff;
+      animation: fadeIn 1.2s;
     }
     h1 {
       text-align: center;
       color: #3f51b5;
       margin-bottom: 24px;
+      margin-top: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 2.1em;
+      animation: fadeIn 1.4s;
     }
     .group {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
+      padding: 20px 16px;
+      border-radius: 12px;
+      background: #f7f8fe;
+      box-shadow: 0 2px 8px rgba(63,81,181,0.09);
+      transition: transform .18s, box-shadow .18s;
+      animation: fadeIn 1.6s;
+      position: relative;
+    }
+    .group:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 22px rgba(63,81,181,0.18);
     }
     .group-title {
-      font-size: 1.2em;
-      font-weight: bold;
+      font-size: 1.25em;
+      font-weight: 700;
       color: #222;
       margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .group-title i {
+      color: #3f51b5;
     }
     .names {
       margin-bottom: 8px;
       color: #444;
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 0.5px;
     }
     .link {
       display: inline-block;
       background: #3f51b5;
       color: #fff;
-      padding: 8px 16px;
-      border-radius: 6px;
+      padding: 8px 18px;
+      border-radius: 7px;
       text-decoration: none;
-      transition: background 0.2s;
+      transition: background 0.2s, box-shadow 0.2s;
       margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 1em;
+      box-shadow: 0 1px 5px rgba(63,81,181,0.10);
+      animation: fadeIn 1.8s;
+    }
+    .link i {
+      margin-right: 6px;
     }
     .link:hover {
       background: #283593;
+      box-shadow: 0 4px 16px rgba(63,81,181,0.20);
     }
     .spreadsheet {
       text-align: center;
       margin-top: 32px;
+      animation: fadeIn 2s;
     }
     .spreadsheet a {
       background: #43a047;
-      padding: 10px 24px;
-      border-radius: 8px;
+      padding: 10px 26px;
+      border-radius: 9px;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.2s;
+      font-size: 1.05em;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 1px 5px rgba(67,160,71,0.10);
+      display: inline-block;
+    }
+    .spreadsheet a i {
+      margin-right: 7px;
     }
     .spreadsheet a:hover {
       background: #2e7031;
+      box-shadow: 0 4px 16px rgba(67,160,71,0.18);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @media (max-width: 600px) {
+      .container { padding: 8px; }
+      h1 { font-size: 1.3em; }
+      .group { padding: 12px 8px; }
+      .logo { max-width: 80px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <img src="logo.png" alt="Logo Valentes de Davi" class="logo">
     <h1>Ministerio de Louvor Valentes de Davi</h1>
 
     <div class="group">
-      <div class="group-title">Grupo 1</div>
+      <div class="group-title"><i class="fa-solid fa-mobile-screen-button"></i>APP 1</div>
       <div class="names">Adjanio, Jesse, Lucas, Vitoria Mesquita</div>
-      <a class="link" href="https://www.appsheet.com/newshortcut/01d862ad-1676-4368-8536-b2c1c2d5f5ce" target="_blank">Acessar AppSheet</a>
+      <a class="link" href="https://www.appsheet.com/newshortcut/01d862ad-1676-4368-8536-b2c1c2d5f5ce" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Acessar AppSheet</a>
     </div>
 
     <div class="group">
-      <div class="group-title">Grupo 2</div>
+      <div class="group-title"><i class="fa-solid fa-mobile-screen-button"></i>APP 2</div>
       <div class="names">Aleane, Ana Clara, Eduardo, Felipe, Isis, Jhordan, Mikeias, Naira, Vitoria Rodrigues</div>
-      <a class="link" href="https://www.appsheet.com/newshortcut/01185661-8dc1-4c1a-a357-70abd9c4b4f1" target="_blank">Acessar AppSheet</a>
+      <a class="link" href="https://www.appsheet.com/newshortcut/01185661-8dc1-4c1a-a357-70abd9c4b4f1" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i>Acessar AppSheet</a>
     </div>
 
     <div class="spreadsheet">
       <a href="https://docs.google.com/spreadsheets/d/1YlDdN1LzGLc40WwJr-5Tt1-Hp_sujKZBvHct4jvRubA/edit?usp=sharing" target="_blank">
-        Link Planilha Geral
+        <i class="fa-solid fa-table"></i>
+        Link das Escala em Planilha
       </a>
     </div>
   </div>
